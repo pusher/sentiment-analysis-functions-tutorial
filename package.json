@@ -5,18 +5,24 @@
   "type": "module",
   "scripts": {
     "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
+    "dev": "nodemon server/index.js",
+    "bundle": "rollup -c rollup.config.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "pusher": "^5.1.3",
+    "sentiment": "^5.0.2"
   },
   "keywords": [],
   "author": "Ovie Okeh <ovie.okeh@messagebird.com>",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
     "nodemon": "^3.0.1"
   }
 }
